@@ -8,4 +8,9 @@ router.get('/', async (req, res) => {});
 router.post('/todo', async (req, res) => {});
 
 //Update a todo
-router.put;
+router.put('/todos/:todoId', async (req, res) => {});
+
+//Delete a todo
+router.delete('/todos/:todoId', async (req, res) => {});
+
+module.exports = router;
