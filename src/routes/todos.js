@@ -3,15 +3,15 @@ const router = express.Router();
 const TodoController = require('../controllers/todo');
 
 //Get all todos
-router.get('/', async (req, res) => {});
+router.get('/', TodoController.getTodos);
 
 //Create a todo
-router.post('/todo', async (req, res) => {});
+router.post('/todo', TodoController.createTodo);
 
 //Update a todo
-router.put('/todos/:todoId', async (req, res) => {});
+router.put('/todos/:todoId', TodoController.updateTodo);
 
 //Delete a todo
-router.delete('/todos/:todoId', async (req, res) => {});
+router.delete('/todos/:todoId', TodoController.deleteTodo);
 
 module.exports = router;
